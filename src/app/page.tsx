@@ -118,18 +118,18 @@ export default function Home() {
         </h1>
 
         {/* Add Todo Input */}
-        <div className="flex gap-2 mb-6">
+        <div className="flex flex-col sm:flex-row gap-2 mb-6 w-full">
           <input
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && addTodo()}
             placeholder="Add a new task..."
-            className="flex-1 text-white px-4 py-2 border border-gray-600 rounded-lg bg-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="flex-1 text-white px-4 py-2 border border-gray-600 rounded-lg bg-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 w-full sm:w-auto"
           />
           <button
             onClick={addTodo}
-            className="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-500 transition font-semibold cursor-pointer"
+            className="w-full sm:w-auto px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-500 transition font-semibold cursor-pointer"
           >
             Add
           </button>
