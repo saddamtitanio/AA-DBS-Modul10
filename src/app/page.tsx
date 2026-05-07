@@ -109,12 +109,12 @@ export default function Home() {
       <div className="bg-gray-800 rounded-lg shadow-lg p-8 w-full max-w-2xl">
         <h1 className="text-4xl font-bold text-white mb-8 text-center">
           Communal Todo List
-          <br />
-          <span className="text-sm text-gray-400">
+          <p className="text-sm text-gray-400 mt-4 leading-relaxed">
             Hippity Hoppity, your todos are my property!
-          </span>
-          <br />
-          <span className="text-sm text-gray-600">Powered by communism.</span>
+          </p>
+          <p className="text-sm text-gray-600 mt-2 leading-relaxed">
+            Powered by communism.
+          </p>
         </h1>
 
         {/* Add Todo Input */}
